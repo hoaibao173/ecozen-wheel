@@ -1,0 +1,162 @@
+body{
+  margin:0;
+  overflow:hidden;
+
+  font-family:'Segoe UI',sans-serif;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  height:100vh;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff1744,
+    #ff9100,
+    #ffee58,
+    #00e676,
+    #00b0ff
+  );
+
+  background-size:400% 400%;
+
+  animation:bgMove 10s ease infinite;
+}
+
+/* animation background */
+@keyframes bgMove{
+
+  0%{
+    background-position:0% 50%;
+  }
+
+  50%{
+    background-position:100% 50%;
+  }
+
+  100%{
+    background-position:0% 50%;
+  }
+}
+
+.wheel-wrapper{
+
+  position:relative;
+
+  width:700px;
+  height:700px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* VÒNG QUAY */
+canvas{
+
+  border-radius:50%;
+
+  border:12px solid rgba(255,255,255,.6);
+
+  box-shadow:
+    0 0 40px rgba(255,255,255,.4),
+    0 0 80px rgba(255,255,255,.2);
+}
+
+/* NÚT QUAY */
+.spin-btn{
+
+  position:absolute;
+
+  width:110px;
+  height:110px;
+
+  border-radius:50%;
+
+  border:none;
+
+  background:#fff;
+
+  font-size:32px;
+  color:#ff6d00;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  z-index:100;
+
+  box-shadow:
+    0 0 20px rgba(0,0,0,.3);
+
+  transition:.2s;
+}
+
+.spin-btn:hover{
+  transform:scale(1.08);
+}
+
+.spin-btn:active{
+  transform:scale(.95);
+}
+
+/* MŨI TÊN */
+.arrow{
+
+  position:absolute;
+
+  right:-10px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:0;
+  height:0;
+
+  border-top:22px solid transparent;
+  border-bottom:22px solid transparent;
+
+  border-right:40px solid #fff;
+
+  z-index:999;
+
+  filter:
+    drop-shadow(0 0 8px rgba(0,0,0,.4));
+}
+
+/* Ô nhập code */
+.code-box{
+
+  position:absolute;
+
+  top:130px;
+
+  display:flex;
+  justify-content:center;
+
+  z-index:1000;
+}
+
+.code-box input{
+
+  width:220px;
+
+  padding:14px 18px;
+
+  border:none;
+  border-radius:14px;
+
+  outline:none;
+
+  font-size:18px;
+  font-weight:bold;
+
+  text-align:center;
+
+  background:rgba(255,255,255,.95);
+
+  box-shadow:
+    0 0 15px rgba(0,0,0,.25);
+}
