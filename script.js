@@ -12,17 +12,25 @@ const FIXED_RESULTS = {
 };
 
 /* MÃ QUAY */
-const ACCESS_CODE = [
-  "E01",
-  "E02",
-  "E03",
-  "E04",
-  "E05",
-  "E06",
-  "E07",
-  "E08"
-];
+let ACCESS_CODE =
+JSON.parse(
+  localStorage.getItem("ACCESS_CODE")
+);
 
+if(!ACCESS_CODE){
+
+  ACCESS_CODE = [
+    "E01","E02","E03","E04",
+    "E05","E06","E07","E08","E09","E10","E11",
+    "E12","E13","E14","E15","E16","E17","E18",
+    "E19","E20","E21","E22"
+  ];
+
+  localStorage.setItem(
+    "ACCESS_CODE",
+    JSON.stringify(ACCESS_CODE)
+  );
+}
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 
@@ -244,6 +252,11 @@ function spin(){
       if(codeIndex > -1){
 
         ACCESS_CODE.splice(codeIndex,1);
+
+localStorage.setItem(
+  "ACCESS_CODE",
+  JSON.stringify(ACCESS_CODE)
+);
       }
 
       /* CLEAR INPUT */
