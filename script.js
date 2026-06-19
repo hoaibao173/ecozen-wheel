@@ -2,15 +2,35 @@ let spinCount = 0;
 
 /* CHỈ ĐỊNH PHẦN THƯỞNG */
 const FIXED_RESULTS = {
-
-  3: "Nón bảo hiểm",
-
-  5: "Đồng hồ đeo tay trẻ em",
-
-  7: "Bình nước mùa hè"
-
+ 15: "Chảo chống dính",
+  25: "Chảo chống dính",
+    35: "Chảo chống dính",
+      45: "Chảo chống dính",
+    50: "Chảo chống dính",
+      60: "Chảo chống dính",
+    70: "Chảo chống dính",
+      80: "Chảo chống dính",
+  
+  21: "Sổ tay + bút ký",
+  31: "Sổ tay + bút ký",
+  41: "Sổ tay + bút ký",
+51: "Sổ tay + bút ký",
+  61: "Sổ tay + bút ký",
+71: "Sổ tay + bút ký",
+  81: "Sổ tay + bút ký",
+  90: "Sổ tay + bút ký",
+  21: "Sổ tay + bút ký",
+  30: "Sổ tay + bút ký",
+  21: "Sổ tay + bút ký",
 };
-
+/* DANH SÁCH QUÀ */
+let names = [
+  "Sổ tay",
+  "Bút kí",
+  "Chảo chống dính",
+  "Sổ tay + bút ký",
+  "Nón bảo hiểm"
+];
 /* MÃ QUAY */
 let ACCESS_CODE =
 JSON.parse(
@@ -36,22 +56,7 @@ const ctx = canvas.getContext("2d");
 
 const spinBtn = document.getElementById("spinBtn");
 
-/* DANH SÁCH QUÀ */
-let names = [
 
-  "Đồng hồ đeo tay trẻ em",
-
-  "Bình nước mùa hè",
-
-  "Đèn pin tiện dụng",
-
-  "Nón bảo hiểm",
-
-  "Sổ tay + bút ký",
-
-  "Balo dây rút"
-
-];
 
 let startAngle = 0;
 
