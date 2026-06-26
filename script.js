@@ -451,7 +451,7 @@ function spin(){
 
 // Mã phải tồn tại trong ACCESS_CODE
 if (!ACCESS_CODE.includes(inputCode)) {
-    alert("❌ Sai mã quay!");
+    alert("❌ Sai mã quay hoặc đã được sử dụng!");
     return;
 }
   /* TĂNG LƯỢT */
