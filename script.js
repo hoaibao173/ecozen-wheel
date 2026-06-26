@@ -126,8 +126,14 @@ let names = [
 ];
 /* MÃ ÉP PHẦN THƯỞNG */
 const FIXED_CODE_RESULTS = {
-    "abc": "Chảo chống dính",
-    "vip": "Nón bảo hiểm",
+    "Ecozen18year02OCFX4N": "Chảo chống dính",
+     "Ecozen18year045GVG5J": "Sổ tay",
+    "Ecozen18year0HQHIP4O": "Nón bảo hiểm",
+    "Ecozen18year0IGYQJ35": "Sổ tay",
+    "Ecozen18year0PQI2OX7": "Nón bảo hiểm",
+    "Ecozen18year0PVVGU6Q": "Sổ tay",
+    "Ecozen18year0QUZG3AY": "Nón bảo hiểm",
+    "Ecozen18year114B4YWL": "Sổ tay",
     "test": "Sổ tay + bút ký"
 };
 /* MÃ QUAY */
