@@ -2,6 +2,9 @@ let spinCount = 0;
 
 /* CHỈ ĐỊNH PHẦN THƯỞNG */
 const FIXED_RESULTS = {
+ 2: "Chảo chống dính",
+ 3: "Chảo chống dính",
+ 4: "Chảo chống dính",
  15: "Chảo chống dính",
   25: "Chảo chống dính",
     35: "Chảo chống dính",
@@ -31,6 +34,12 @@ let names = [
   "Sổ tay + bút ký",
   "Nón bảo hiểm"
 ];
+/* MÃ ÉP PHẦN THƯỞNG */
+const FIXED_CODE_RESULTS = {
+    "abc": "Chảo chống dính",
+    "vip": "Nón bảo hiểm",
+    "test": "Sổ tay + bút ký"
+};
 /* MÃ QUAY */
 let ACCESS_CODE =
 JSON.parse(
@@ -39,12 +48,187 @@ JSON.parse(
 
 if(!ACCESS_CODE){
 
-  ACCESS_CODE = [
-    "e01","e02","e03","e04",
-    "e05","e06","e07","e08","e09","e10","e11",
-    "e12","e13","e14","e15","e16","e17","e18",
-    "e19","e20","e21","e22"
-  ];
+  ACCESS_CODE = [  "Ecozen18year02OCFX4N",
+  "Ecozen18year045GVG5J",
+  "Ecozen18year0HQHIP4O",
+  "Ecozen18year0IGYQJ35",
+  "Ecozen18year0PQI2OX7",
+  "Ecozen18year0PVVGU6Q",
+  "Ecozen18year0QUZG3AY",
+  "Ecozen18year114B4YWL",
+  "Ecozen18year13OUN5RV",
+  "Ecozen18year17FUJOCZ",
+  "Ecozen18year18R3ML8K",
+  "Ecozen18year194IAOBY",
+  "Ecozen18year1CQ0FR6B",
+  "Ecozen18year1O5RMYV3",
+  "Ecozen18year1TADK5SX",
+  "Ecozen18year25AFSIQM",
+  "Ecozen18year2FX1VQXC",
+  "Ecozen18year2G0DFE8N",
+  "Ecozen18year2TM566OO",
+  "Ecozen18year343WYMNY",
+  "Ecozen18year36ZHDRJS",
+  "Ecozen18year3OEGGYJI",
+  "Ecozen18year3VH4GPII",
+  "Ecozen18year3X7KZ5SV",
+  "Ecozen18year4EOWZMI1",
+  "Ecozen18year4M7XNLDU",
+  "Ecozen18year4O0UF099",
+  "Ecozen18year4Y0PBLHO",
+  "Ecozen18year56EERM2M",
+  "Ecozen18year5FGI8QG0",
+  "Ecozen18year5FWPZ0GB",
+  "Ecozen18year682SGY0Y",
+  "Ecozen18year6P2PSAP6",
+  "Ecozen18year6V8RK7W8",
+  "Ecozen18year6WRVWIEN",
+  "Ecozen18year721O3SE0",
+  "Ecozen18year78S2CT7P",
+  "Ecozen18year7D7GR9BC",
+  "Ecozen18year7KP91XY0",
+  "Ecozen18year7M57K4FX",
+  "Ecozen18year7O3QNRWV",
+  "Ecozen18year7UXBJ78J",
+  "Ecozen18year7YHBQI6I",
+  "Ecozen18year80DA7ESD",
+  "Ecozen18year87Z8IEX5",
+  "Ecozen18year88WSU0FI",
+  "Ecozen18year8CBVW7F4",
+  "Ecozen18year8UJW2NX0",
+  "Ecozen18year8UNZ3DBK",
+  "Ecozen18year8XK4A48G",
+  "Ecozen18year918MNRXR",
+  "Ecozen18year97WA4JQA",
+  "Ecozen18year9EU9OOF0",
+  "Ecozen18year9KMJLDWI",
+  "Ecozen18year9QFRHASC",
+  "Ecozen18year9Y4YGPCU",
+  "Ecozen18yearA0OJLA1V",
+  "Ecozen18yearAFBENDXA",
+  "Ecozen18yearAL6R8U1I",
+  "Ecozen18yearAM8XH1WU",
+  "Ecozen18yearAPUPC60T",
+  "Ecozen18yearARZIWS8I",
+  "Ecozen18yearAXH7KW2T",
+  "Ecozen18yearBLA7FG1K",
+  "Ecozen18yearBM3SCTHI",
+  "Ecozen18yearBSC1TPOO",
+  "Ecozen18yearBZH1JSSM",
+  "Ecozen18yearC47515VC",
+  "Ecozen18yearC7C92ICU",
+  "Ecozen18yearCGEKEJ5R",
+  "Ecozen18yearCHLAO1VA",
+  "Ecozen18yearCN8OMXUF",
+  "Ecozen18yearCO0EIJJF",
+  "Ecozen18yearCS839TOF",
+  "Ecozen18yearDDG9UJH3",
+  "Ecozen18yearDPE2ORC1",
+  "Ecozen18yearE2YDWEBM",
+  "Ecozen18yearE50UQ78N",
+  "Ecozen18yearEK9PX1AP",
+  "Ecozen18yearEPUCT22Z",
+  "Ecozen18yearF3EQ49LZ",
+  "Ecozen18yearF5QSTVY8",
+  "Ecozen18yearF96K4JFV",
+  "Ecozen18yearFD6V8BBF",
+  "Ecozen18yearFE46LK10",
+  "Ecozen18yearFGEKEFMS",
+  "Ecozen18yearFJJO2LQT",
+  "Ecozen18yearFW9DJFMS",
+  "Ecozen18yearFY09UH4M",
+  "Ecozen18yearG2S9VJVV",
+  "Ecozen18yearGFE3Q8JL",
+  "Ecozen18yearGFQK65UO",
+  "Ecozen18yearGMD8U5FX",
+  "Ecozen18yearGZ9HXDTX",
+  "Ecozen18yearH0JLT408",
+  "Ecozen18yearH5YNGF15",
+  "Ecozen18yearH6JH27OH",
+  "Ecozen18yearHDJB6RFY",
+  "Ecozen18yearHE36J4P1",
+  "Ecozen18yearHQ344UND",
+  "Ecozen18yearHR1456VW",
+  "Ecozen18yearHSSQBMW0",
+  "Ecozen18yearIQT884R8",
+  "Ecozen18yearIU1LIEA6",
+  "Ecozen18yearJ2KM4O1Y",
+  "Ecozen18yearJ490YT7H",
+  "Ecozen18yearJ68AD7RI",
+  "Ecozen18yearJCU8H9TE",
+  "Ecozen18yearJE5Y8LWR",
+  "Ecozen18yearJEY2HTG8",
+  "Ecozen18yearJQALK60S",
+  "Ecozen18yearK3XIP9X7",
+  "Ecozen18yearK6LS43WJ",
+  "Ecozen18yearK9SUJOMG",
+  "Ecozen18yearKMI75Q1B",
+  "Ecozen18yearKOPW5WK3",
+  "Ecozen18yearKUZJ0QBL",
+  "Ecozen18yearL1VFAJJA",
+  "Ecozen18yearL92B0YMN",
+  "Ecozen18yearL9WDBHYZ",
+  "Ecozen18yearLA0W368Z",
+  "Ecozen18yearLDJMJU9F",
+  "Ecozen18yearLIAP14AZ",
+  "Ecozen18yearLR2QDYQJ",
+  "Ecozen18yearLVYFJBPZ",
+  "Ecozen18yearLZKZHBNY",
+  "Ecozen18yearM7X0MWN2",
+  "Ecozen18yearMARZ3XYR",
+  "Ecozen18yearMJZD0TM4",
+  "Ecozen18yearN44M8PKQ",
+  "Ecozen18yearN9LA4E9V",
+  "Ecozen18yearNATVAJVD",
+  "Ecozen18yearNCQ36HZK",
+  "Ecozen18yearNEJD0RP7",
+  "Ecozen18yearNGWYH3ZP",
+  "Ecozen18yearNJ3DJYDQ",
+  "Ecozen18yearNUSTNXN1",
+  "Ecozen18yearNWNVIGYS",
+  "Ecozen18yearOCOHSH6X",
+  "Ecozen18yearOPBJSY4K",
+  "Ecozen18yearOPO9G2OD",
+  "Ecozen18yearORITRC0P",
+  "Ecozen18yearOZG5F0LZ",
+  "Ecozen18yearP181G20X",
+  "Ecozen18yearPHQSK8IL",
+  "Ecozen18yearPIZYKMKY",
+  "Ecozen18yearPV5O5VB9",
+  "Ecozen18yearR4HFZY6Z",
+  "Ecozen18yearR4W2YE89",
+  "Ecozen18yearRE8VP9MI",
+  "Ecozen18yearRHO3GPVJ",
+  "Ecozen18yearRJD469P7",
+  "Ecozen18yearRR73OPYP",
+  "Ecozen18yearRRXYC5BN",
+  "Ecozen18yearRS4T40PY",
+  "Ecozen18yearRXJFP094",
+  "Ecozen18yearS7OXA5VW",
+  "Ecozen18yearSJR2TKL5",
+  "Ecozen18yearSM72QY1C",
+  "Ecozen18yearSX49MYYQ",
+  "Ecozen18yearT78Z9UUL",
+  "Ecozen18yearTINN8GU4",
+  "Ecozen18yearTLBP5UJY",
+  "Ecozen18yearTTTDP22P",
+  "Ecozen18yearTVY6HSXL",
+  "Ecozen18yearTZCFN9EW",
+  "Ecozen18yearU8ET5RZU",
+  "Ecozen18yearURSX8JL6",
+  "Ecozen18yearV4QTAOBE",
+  "Ecozen18yearV6DGC3DD",
+  "Ecozen18yearVD7ER9DJ",
+  "Ecozen18yearVZU8ZAHW",
+  "Ecozen18yearW2VQZ653",
+  "Ecozen18yearW75QEBKT",
+  "Ecozen18yearWMGJG8GM",
+  "Ecozen18yearWMQ741T0",
+  "Ecozen18yearWU6KWNOH",
+  "Ecozen18yearX4VEUZWM",
+  "Ecozen18yearX85VTWQB",
+  "Ecozen18yearXCL7M5A7"
+];
 
   localStorage.setItem(
     "ACCESS_CODE",
@@ -169,14 +353,11 @@ function spin(){
     .value
     .trim();
 
-  /* CHECK CODE */
-  if(!ACCESS_CODE.includes(inputCode)){
-
+// Mã phải tồn tại trong ACCESS_CODE
+if (!ACCESS_CODE.includes(inputCode)) {
     alert("❌ Sai mã quay!");
-
     return;
-  }
-
+}
   /* TĂNG LƯỢT */
   spinCount++;
 
@@ -186,10 +367,20 @@ function spin(){
 
   let targetAngle;
 
-  /* QUÀ CHỈ ĐỊNH */
-  const fixedPrize =
-    FIXED_RESULTS[spinCount];
+// Ưu tiên ép theo mã
 
+let fixedPrize = null;
+
+// Nếu mã có ép quà thì ưu tiên
+if (FIXED_CODE_RESULTS.hasOwnProperty(inputCode)) {
+
+    fixedPrize = FIXED_CODE_RESULTS[inputCode];
+
+} else if (FIXED_RESULTS.hasOwnProperty(spinCount)) {
+
+    // Không có mã ép thì dùng lượt quay
+    fixedPrize = FIXED_RESULTS[spinCount];
+}
   /* ÉP KẾT QUẢ */
   if(
     fixedPrize &&
@@ -250,19 +441,19 @@ function spin(){
 
       spinning = false;
 
-      /* XÓA CODE */
-      const codeIndex =
-        ACCESS_CODE.indexOf(inputCode);
+   const codeIndex = ACCESS_CODE.indexOf(inputCode);
 
-      if(codeIndex > -1){
+if (codeIndex !== -1) {
 
-        ACCESS_CODE.splice(codeIndex,1);
+    ACCESS_CODE.splice(codeIndex, 1);
 
-localStorage.setItem(
-  "ACCESS_CODE",
-  JSON.stringify(ACCESS_CODE)
-);
-      }
+    localStorage.setItem(
+        "ACCESS_CODE",
+        JSON.stringify(ACCESS_CODE)
+    );
+
+    console.log("Đã xóa mã:", inputCode);
+}
 
       /* CLEAR INPUT */
       document.getElementById("spinCode").value = "";
@@ -299,3 +490,5 @@ function pickWinner(){
   );
 }
 spinBtn.addEventListener("click",spin);
+// localStorage.removeItem("ACCESS_CODE");
+// location.reload();
