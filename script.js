@@ -144,7 +144,7 @@ JSON.parse(
 
 if(!ACCESS_CODE){
 
-  ACCESS_CODE = [  "Ecozen18year02OCFX4N",
+  ACCESS_CODE = ["Ecozen18year02OCFX4N",
   "Ecozen18year045GVG5J",
   "Ecozen18year0HQHIP4O",
   "Ecozen18year0IGYQJ35",
@@ -323,7 +323,27 @@ if(!ACCESS_CODE){
   "Ecozen18yearWU6KWNOH",
   "Ecozen18yearX4VEUZWM",
   "Ecozen18yearX85VTWQB",
-  "Ecozen18yearXCL7M5A7"
+  "Ecozen18yearXCL7M5A7",
+  "Ecozen18yearXHDWXCQN",
+  "Ecozen18yearXJK5DUGF",
+  "Ecozen18yearXLOFVCR1",
+  "Ecozen18yearXPO9RCD0",
+  "Ecozen18yearY4UUGS58",
+  "Ecozen18yearY6O9RWGD",
+  "Ecozen18yearYHAJURQT",
+  "Ecozen18yearYO4JJY0R",
+  "Ecozen18yearYP2UI61U",
+  "Ecozen18yearYRDMXEUG",
+  "Ecozen18yearYRN791TW",
+  "Ecozen18yearYSN5YY7S",
+  "Ecozen18yearYVAS49ZX",
+  "Ecozen18yearYWYT25Y5",
+  "Ecozen18yearZ0IKCW8B",
+  "Ecozen18yearZ6NGGD55",
+  "Ecozen18yearZCCZZ2S0",
+  "Ecozen18yearZV66TBPK",
+  "Ecozen18yearZWK4FQJ8",
+  "Ecozen18yearZYRG1K53"
 ];
 
   localStorage.setItem(
@@ -586,5 +606,5 @@ function pickWinner(){
   );
 }
 spinBtn.addEventListener("click",spin);
-localStorage.removeItem("ACCESS_CODE");
-location.reload();
+// localStorage.removeItem("ACCESS_CODE");
+// location.reload();
