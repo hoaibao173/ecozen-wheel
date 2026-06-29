@@ -586,5 +586,5 @@ function pickWinner(){
   );
 }
 spinBtn.addEventListener("click",spin);
-// localStorage.removeItem("ACCESS_CODE");
-// location.reload();
+localStorage.removeItem("ACCESS_CODE");
+location.reload();
